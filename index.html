@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: url('img/wall-1.jpg')">
+          <div class="caption">
+              <h1>Slide#1</h1>
+          </div>
+      </div>
+      <div class="swiper-slide" style="background: url('img/wall-2.jpg')">
+        <div class="caption">
+            <h1>Slide#2</h1>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background: url('img/wall-3.jpg')">
+        <div class="caption">
+            <h1>Slide#3</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/myScript.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: false,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  </body>
+</html>
